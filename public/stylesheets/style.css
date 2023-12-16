@@ -1,8 +1,38 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
 }
 
-a {
-  color: #00B7FF;
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(229, 198, 0);
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
 }
+.header .logo {
+  color: #fff;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header .search {
+  width: 200px;
+  height: 30px;
+  margin-right: 100px;
+  border: none;
+  border-radius: 15px;
+}
+
+.container {
+  padding: 50px 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container .item {
+  border-radius: 30px;
+  border: 2px solid #4c4c4c;
+  padding: 20px 15px;
+}
+.container .item:hover {
+  border-color: rgb(229, 198, 0);
+}/*# sourceMappingURL=style.css.map */

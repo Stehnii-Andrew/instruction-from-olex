@@ -44,3 +44,5 @@ server.use(function(err, req, res, next) {
 
 module.exports = server;
 // test1
+
+server.listen(4000);
