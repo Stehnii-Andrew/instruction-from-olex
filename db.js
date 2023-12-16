@@ -70,4 +70,3 @@ const rests = [
 const getRests = () => {
     return rests;
 }
-
