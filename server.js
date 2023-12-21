@@ -18,13 +18,10 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
 server.use(cookieParser());
 server.use(express.static(path.join(__dirname, 'public')));
-
+// Routes
 server.use('/', indexRouter);
 server.use('/menu', menuRouter);
-// Відображення головної сторінки
-server.get('/', (req, res) => {
-  res.render('index');
-});
+
 
 // catch 404 and forward to error handler
 server.use(function(req, res, next) {
