@@ -70,3 +70,5 @@ const rests = [
 const getRests = () => {
     return rests;
 }
+
+module.exports = getRests;
