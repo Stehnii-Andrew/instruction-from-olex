@@ -71,4 +71,6 @@ const getRests = () => {
     return rests;
 }
 
-module.exports = getRests;
+module.exports = { 
+    getRests 
+};
