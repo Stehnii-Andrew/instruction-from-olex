@@ -39,11 +39,26 @@ body {
         font-style: none;
         display: block;
         box-sizing: border-box;
+        font-size: 30px;
+        position: relative;
+        text-decoration: none;
+        color: #000;
 
         &:hover {
             border-color: rgb(229, 198, 0);
             transition: 0.3s;
         }
+        .cost {
+            text-align: end;
+            color: rgb(0, 185, 0);
+            font-size: 30px;
+            position: absolute;
+            right: 20px;
 
+            .grn {
+                color: black;
+            }
+        }
+        
     }
 }

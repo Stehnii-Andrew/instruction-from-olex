@@ -10,10 +10,10 @@
       <input type="text" class="search" placeholder="Введіть назву ресторану, страви">
     </header>
     <div class="container">
-      <% restData.forEach((item) => { %>
-      <a class="item" href="/menu/<%= item.id %>">       
-          <h1 class=""><%= item.name %></h1>
-          <p><%= item.description %></p>        
+      <% restDishes.forEach((item) => { %>
+      <a class="item">       
+          <span class=""><%= item.name %></span>
+          <span class="cost"><%= item.cost %><span class="grn">грн</span></span>        
       </a>
       <% }); %> 
       </div>

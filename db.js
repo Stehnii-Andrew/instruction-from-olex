@@ -3,7 +3,7 @@ const rests = [
         id: 1,
         name: 'Greak House',
         description: 'Грецька кухня',
-        dishs: [
+        dishes: [
             {
                 id: 1,
                 name: 'Класичний гірос',
@@ -25,7 +25,7 @@ const rests = [
         id: 2,
         name: 'Sushi store',
         description: 'Кавказькі суші',
-        dishs: [
+        dishes: [
             {
                 id: 1,
                 name: 'Філадельфія',
@@ -47,7 +47,7 @@ const rests = [
         id: 3,
         name: 'Мамина піпіська',
         description: 'Хотдожна, нетрадиційна(орієнтація)',
-        dishs: [
+        dishes: [
             {
                 id: 1,
                 name: 'Хот-дог XXL з класичною сосискою у світлій булці',
@@ -71,6 +71,12 @@ const getRests = () => {
     return rests;
 }
 
+const findById = (id) => {
+    const result = rests.find(item => item.id === id);
+    return result
+}
+
 module.exports = { 
-    getRests 
+    getRests,
+    findById 
 };
