@@ -7,13 +7,15 @@
   <body>
     <header class="header">
       <div class="logo">GLOVO</div>
+      <img src="/images/2849824-basket-buy-market-multimedia-shop-shopping-store_107977.png" class="cart">
       <input type="text" class="search" placeholder="Введіть назву ресторану, страви">
     </header>
     <div class="container">
       <% restDishes.forEach((item) => { %>
       <a class="item">       
           <span class=""><%= item.name %></span>
-          <span class="cost"><%= item.cost %><span class="grn">грн</span></span>        
+          <span class="cost"><%= item.cost %><span class="grn">грн</span></span>    
+          <div class="add">Додати в корзину </div>    
       </a>
       <% }); %> 
       </div>
