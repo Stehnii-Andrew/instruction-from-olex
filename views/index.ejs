@@ -10,11 +10,11 @@
       <input type="text" class="search" placeholder="Введіть назву ресторану, страви">
     </header>
     <div class="container">
-      <% getRests.forEach((item) => { %>
-      <div class="item">       
+      <% restData.forEach((item) => { %>
+      <a class="item">       
           <h1 class=""><%= item.name %></h1>
           <p><%= item.description %></p>        
-      </div>
+      </a>
       <% }); %> 
       </div>
     </div>

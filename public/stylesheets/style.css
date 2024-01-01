@@ -35,6 +35,8 @@ body {
   transition: 0.3s;
   margin: 50px 0px;
   font-style: none;
+  display: block;
+  box-sizing: border-box;
 }
 .container .item:hover {
   border-color: rgb(229, 198, 0);

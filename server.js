@@ -20,7 +20,7 @@ server.use(cookieParser());
 server.use(express.static(path.join(__dirname, 'public')));
 // Routes
 server.use('/', indexRouter);
-server.use('/menu', menuRouter);
+server.use('/menu/:id', menuRouter);
 
 
 // catch 404 and forward to error handler

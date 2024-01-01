@@ -5,7 +5,6 @@ const { getRests } = require('../db');
 /* GET home page. */
 router.get('/', (req, res, next) => {
   const restData = getRests();
-  console.log( restData );
   res.render('index', { restData });
 });
 
